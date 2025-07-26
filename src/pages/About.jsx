@@ -119,7 +119,7 @@ const About = () => {
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>
                       <span className="font-medium">Frontend:</span> React,
-                      TailwindCSS
+                      TailwindCSS, ReactBits, FlowBite
                     </li>
                     <li>
                       <span className="font-medium">API:</span> CoinGecko
