@@ -1,7 +1,15 @@
 import React from 'react'
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
+import Watchlist from '../pages/Watchlist';
+
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const movetoWatchlist = () => {
+    navigate("/watchlist")
+    Watchlist()
+  }
   return (
     <div>
       <section className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-950 flex items-center justify-center p-6">
@@ -29,7 +37,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center">
+            <button onClick={movetoWatchlist} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center">
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>
