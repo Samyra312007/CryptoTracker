@@ -1,14 +1,14 @@
 import React from 'react'
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
-import Watchlist from '../pages/Watchlist';
+import CoinDetails from '../pages/CoinDetails';
 
 
 const Hero = () => {
   const navigate = useNavigate();
-  const movetoWatchlist = () => {
-    navigate("/watchlist")
-    Watchlist()
+  const movetoCoin = () => {
+    navigate("/coin")
+    CoinDetails()
   }
   return (
     <div>
@@ -37,7 +37,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <button onClick={movetoWatchlist} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center">
+            <button onClick={movetoCoin} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center">
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>

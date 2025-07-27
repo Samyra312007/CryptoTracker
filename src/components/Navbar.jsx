@@ -3,7 +3,7 @@ import Dock from "../reactbits/Dock/Dock";
 import { VscHome, VscArchive, VscAccount } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
 import About from "../pages/About";
-import Watchlist from "../pages/Watchlist"
+import CoinDetails from "../pages/CoinDetails";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   const watchlistRoute = () => {
-    navigate('/watchlist');
-    Watchlist()
+    navigate('/coin');
+    CoinDetails()
   };
 
   const aboutRoute = () => {
